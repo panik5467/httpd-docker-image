@@ -2,4 +2,5 @@ FROM busybox
 
 COPY index.html /var/www
 
-CMD ["httpd","-f","-h","/var/www"]
+#CMD ["httpd","-p $PORT","-h","/var/www"]
+CMD /bin/sh -c "httpd -p $PORT -h /var/www"
