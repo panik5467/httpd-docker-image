@@ -1,3 +1,5 @@
 build:
   docker:
     web: Dockerfile
+run:
+  web: busybox httpd -p $PORT -h /var/www
