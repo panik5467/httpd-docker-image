@@ -1,6 +1,7 @@
 # httpd-docker-image
 
-## Build a new docker image :
+## Build a new docker image based on busybox :
+See [https://github.com/lipanski/docker-static-website]
 
 ```
 docker build --tag=httpd:latest .
